@@ -7,7 +7,7 @@ ARG GID=1001
 RUN groupadd -g $GID -r pyrunner \
    && useradd -c 'Python runner' -u $UID -m -d /home/pyrunner -s /bin/bash -g pyrunner pyrunner 
 
-USER pyrunner
+USER $UID
 
-ENV REFRESHED_AT 2018-08-29T17:45
+ENV REFRESHED_AT 2018-08-21T17:32
 CMD [ "python", "./simpleservice.py" ]

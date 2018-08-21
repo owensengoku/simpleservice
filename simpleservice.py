@@ -31,7 +31,7 @@ PORT = os.getenv('PORT0', 9876)
 
 # By default simple service reports this value in
 # the /endpoint0 unless overridden by below env variable.
-VERSION = os.getenv('SIMPLE_SERVICE_VERSION', "0.5.1")
+VERSION = os.getenv('SIMPLE_SERVICE_VERSION', "0.5.2")
 
 # By default the `/health` endpoint returns a HTTP code 200
 # immediately but you can define the range with the following
